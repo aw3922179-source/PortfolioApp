@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Abdul Wasay Ali</title>
+  <meta name="description" content="Get in touch with Abdul Wasay Ali — aw3922179@gmail.com, 03110269718.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/profile.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="contact">
+
+  <div id="preloader"><div class="loader-ring"></div></div>
+  <div id="navHost"></div>
+
+  <main>
+
+    <!-- ============ PAGE HEAD ============ -->
+    <section class="page-head">
+      <div class="wrap">
+        <div class="crumbs reveal"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
+        <h1 class="reveal">Get In <span class="gradient-text">Touch</span></h1>
+        <p class="reveal">
+          Whether it is a project, a question or just a hello — fill in the form below or
+          simply call or email me. I reply within 24 hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section style="padding-top:16px">
+      <div class="wrap">
+        <div class="contact-grid">
+
+          <!-- ---- left: info ---- -->
+          <div>
+            <div class="card reveal" style="padding:24px;margin-bottom:22px;text-align:center">
+              <img src="assets/profile.jpg"
+                   onerror="this.onerror=null;this.src='assets/profile.svg'"
+                   alt="Abdul Wasay Ali"
+                   style="width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto 14px;padding:4px;background:var(--grad)">
+              <h3 style="margin:0 0 4px;font-size:1.15rem">Abdul Wasay Ali</h3>
+              <p style="margin:0;color:var(--text-3);font-size:.86rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Full-Stack Web Developer</p>
+              <p style="margin:14px 0 0;font-size:.86rem;color:var(--text-2)">
+                <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:7px"></span>
+                Available for freelance projects
+              </p>
+            </div>
+
+            <div id="contactCards"><!-- rendered by main.js --></div>
+          </div>
+
+          <!-- ---- right: form ---- -->
+          <div class="card reveal" style="padding:30px">
+            <h3 style="font-size:1.25rem;margin-bottom:.2em">Send Me a Message</h3>
+            <p style="color:var(--text-2);font-size:.93rem;margin-bottom:24px">
+              Fill in the form — your email client will open with the message ready to send.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+
+                <div class="field">
+                  <label for="cfName">Your Name *</label>
+                  <input type="text" id="cfName" name="name" placeholder="e.g. Ahmed Khan" autocomplete="name">
+                  <span class="msg"></span>
+                </div>
+
+                <div class="field">
+                  <label for="cfEmail">Email Address *</label>
+                  <input type="email" id="cfEmail" name="email" placeholder="you@example.com" autocomplete="email">
+                  <span class="msg"></span>
+                </div>
+
+                <div class="field full">
+                  <label for="cfSubject">Subject *</label>
+                  <select id="cfSubject" name="subject">
+                    <!-- options rendered by main.js -->
+                  </select>
+                  <span class="msg"></span>
+                </div>
+
+                <div class="field full">
+                  <label for="cfMessage">Message *</label>
+                  <textarea id="cfMessage" name="message" placeholder="Tell me about your project or question in detail…"></textarea>
+                  <span class="msg"></span>
+                </div>
+
+                <div class="field full" style="flex-direction:row;gap:12px;flex-wrap:wrap">
+                  <button class="btn btn-primary" type="submit">Send Message →</button>
+                  <button class="btn btn-ghost" type="button" data-copy="aw3922179@gmail.com">Copy Email</button>
+                </div>
+
+              </div>
+            </form>
+
+            <div class="form-note" id="formNote"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Quick Answers</span>
+          <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+        </div>
+        <div class="grid-2">
+          <div class="card mini-card reveal">
+            <span class="ic">⏱</span>
+            <h4>How quickly do you reply?</h4>
+            <p>Usually within 24 hours. On WhatsApp, often right away.</p>
+          </div>
+          <div class="card mini-card reveal">
+            <span class="ic">💼</span>
+            <h4>What kind of projects do you take on?</h4>
+            <p>PHP and MySQL web applications, management systems, dashboards and responsive frontends.</p>
+          </div>
+          <div class="card mini-card reveal">
+            <span class="ic">🌐</span>
+            <h4>Do you handle deployment as well?</h4>
+            <p>Yes — from database setup and hosting configuration all the way to deployment.</p>
+          </div>
+          <div class="card mini-card reveal">
+            <span class="ic">🔧</span>
+            <h4>Can you fix an existing website?</h4>
+            <p>Yes — fixing bugs, improving the design and adding new features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-tight">
+      <div class="wrap" id="ctaBand"><!-- rendered by main.js --></div>
+    </section>
+
+  </main>
+
+  <div id="footHost"></div>
+  <button id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-box" id="modalContent"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

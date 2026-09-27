@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Abdul Wasay Ali</title>
+  <meta name="description" content="About Abdul Wasay Ali — full-stack web developer, PHP and MySQL specialist, and his learning journey.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/profile.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="about">
+
+  <div id="preloader"><div class="loader-ring"></div></div>
+  <div id="navHost"></div>
+
+  <main>
+
+    <!-- ============ PAGE HEAD ============ -->
+    <section class="page-head">
+      <div class="wrap">
+        <div class="crumbs reveal"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
+        <h1 class="reveal">About <span class="gradient-text">Me</span></h1>
+        <p class="reveal">A developer who enjoys building systems — not just pages.</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT BODY ============ -->
+    <section style="padding-top:20px">
+      <div class="wrap">
+        <div class="about-grid">
+
+          <div class="about-photo reveal">
+            <img src="assets/profile.jpg"
+                 onerror="this.onerror=null;this.src='assets/profile.svg'"
+                 alt="Abdul Wasay Ali">
+            <div class="about-photo-cap">
+              <b>Abdul Wasay Ali</b>
+              <span>Full-Stack Web Developer</span>
+            </div>
+          </div>
+
+          <div class="about-body" id="aboutBody"><!-- rendered by main.js --></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="grid-4" id="statsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="wrap">
+        <div class="grid-2" style="gap:56px;align-items:start">
+
+          <div class="section-head reveal" style="margin-bottom:0">
+            <span class="eyebrow">Journey</span>
+            <h2>My <span class="gradient-text">Journey</span></h2>
+            <p>From frontend fundamentals to full-stack engineering — step by step.</p>
+            <div style="margin-top:26px">
+              <a class="btn btn-ghost" href="projects.html">View Projects →</a>
+            </div>
+          </div>
+
+          <div class="timeline" id="timeline"><!-- rendered by main.js --></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Skills</span>
+          <h2>Technical <span class="gradient-text">Toolkit</span></h2>
+        </div>
+        <div class="grid-3" id="skillsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ PRINCIPLES ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">How I Work</span>
+          <h2>My <span class="gradient-text">Principles</span></h2>
+        </div>
+        <div class="grid-4" id="principlesGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT STRIP ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="grid-2">
+          <a class="contact-card reveal" href="mailto:aw3922179@gmail.com">
+            <span class="ic">✉</span>
+            <span><small>Email</small><b>aw3922179@gmail.com</b></span>
+          </a>
+          <a class="contact-card reveal" href="tel:+923110269718">
+            <span class="ic">☎</span>
+            <span><small>Phone</small><b>03110269718</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-tight">
+      <div class="wrap" id="ctaBand"><!-- rendered by main.js --></div>
+    </section>
+
+  </main>
+
+  <div id="footHost"></div>
+  <button id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-box" id="modalContent"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

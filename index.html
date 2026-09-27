@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Wasay Ali-Full-Stack Web Developer</title>
+  <meta name="description" content="Abdul Wasay Ali - Full-Stack Web Developer. Complete web applications built with PHP, MySQL and JavaScript. Projects: Courier Management System, Wings of Wisdom, JS Calculator.">
+  <meta name="author" content="Abdul Wasay Ali">
+  <meta name="keywords" content="Abdul Wasay Ali, Web Developer, PHP Developer, MySQL, JavaScript, Portfolio, Full Stack">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdul Wasay Ali - Full-Stack Web Developer">
+  <meta property="og:description" content="Complete web applications - PHP, MySQL, JavaScript and responsive UI.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/profile.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="home">
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader"><div class="loader-ring"></div></div>
+
+  <!-- ============ NAVBAR (JS injects) ============ -->
+  <div id="navHost"></div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+
+          <div id="heroIdentity" class="reveal">
+            <!-- rendered by main.js -->
+          </div>
+
+          <div class="photo-stage reveal">
+            <div class="photo-ring"></div>
+            <div class="photo-ring rev"></div>
+
+            <div class="badge-float b1"><span class="dot"></span> Available for work</div>
+            <div class="badge-float b2">🚀 Full-Stack Developer</div>
+
+            <div class="photo-frame">
+              <img src="assets/profile.jpg"
+                   onerror="this.onerror=null;this.src='assets/profile.svg'"
+                   alt="Abdul Wasay Ali">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" id="marquee"><!-- rendered by main.js --></div>
+
+    <!-- ============ STATS ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="grid-4" id="statsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT PREVIEW ============ -->
+    <section id="about">
+      <div class="wrap">
+        <div class="about-grid">
+
+          <div class="about-photo reveal">
+            <img src="assets/profile.jpg"
+                 onerror="this.onerror=null;this.src='assets/profile.svg'"
+                 alt="Abdul Wasay Ali">
+            <div class="about-photo-cap">
+              <b>Abdul Wasay Ali</b>
+              <span>Full-Stack Web Developer</span>
+            </div>
+          </div>
+
+          <div class="about-body" id="homeAbout">
+            <!-- rendered by main.js -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Skills</span>
+          <h2>My <span class="gradient-text">Technical Toolkit</span></h2>
+          <p>From the frontend to the database - the tools I work with every single day.</p>
+        </div>
+        <div class="grid-3" id="skillsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section id="work" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Portfolio</span>
+          <h2>My <span class="gradient-text">Featured Projects</span></h2>
+          <p>These projects are live on my GitHub - browse the code and the details.</p>
+        </div>
+        <div class="grid-2" id="projectsGrid"><!-- rendered by main.js --></div>
+
+        <div style="text-align:center;margin-top:44px" class="reveal">
+          <a class="btn btn-ghost" href="projects.html">View All Projects →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Services</span>
+          <h2>What I <span class="gradient-text">Can Build</span></h2>
+          <p>From the first idea to deployment - a complete web application.</p>
+        </div>
+        <div class="grid-4" id="servicesGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ PRINCIPLES ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">How I Work</span>
+          <h2>My <span class="gradient-text">Principles</span></h2>
+        </div>
+        <div class="grid-4" id="principlesGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-tight">
+      <div class="wrap" id="ctaBand"><!-- rendered by main.js --></div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (JS injects) ============ -->
+  <div id="footHost"></div>
+
+  <button id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-box" id="modalContent"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

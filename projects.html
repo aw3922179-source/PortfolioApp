@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Abdul Wasay Ali</title>
+  <meta name="description" content="Projects by Abdul Wasay Ali — Courier Management System (PHP/MySQL), Wings of Wisdom (JavaScript) and the JS Calculator.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/profile.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="projects">
+
+  <div id="preloader"><div class="loader-ring"></div></div>
+  <div id="navHost"></div>
+
+  <main>
+
+    <!-- ============ PAGE HEAD ============ -->
+    <section class="page-head">
+      <div class="wrap">
+        <div class="crumbs reveal"><a href="index.html">Home</a> &nbsp;/&nbsp; Projects</div>
+        <h1 class="reveal">My <span class="gradient-text">Projects</span></h1>
+        <p class="reveal">
+          Three projects at three different levels — from core JavaScript logic all the way
+          to a complete multi-role PHP and MySQL platform. The source code for every project is live on GitHub.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FILTERS ============ -->
+    <section style="padding-top:10px;padding-bottom:0">
+      <div class="wrap">
+        <div class="filters reveal" id="filterBar">
+          <button class="chip active" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="fullstack" type="button">Full-Stack</button>
+          <button class="chip" data-filter="frontend" type="button">Frontend</button>
+          <button class="chip" data-filter="javascript" type="button">JavaScript</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS GRID ============ -->
+    <section style="padding-top:22px">
+      <div class="wrap">
+        <div class="grid-2" id="projectsGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Capabilities</span>
+          <h2>What These Projects <span class="gradient-text">Include</span></h2>
+        </div>
+        <div class="grid-4" id="servicesGrid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB STRIP ============ -->
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="card reveal" style="display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:space-between">
+          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <img src="assets/profile.jpg"
+                 onerror="this.onerror=null;this.src='assets/profile.svg'"
+                 alt="Abdul Wasay Ali"
+                 style="width:62px;height:62px;border-radius:50%;object-fit:cover;padding:3px;background:var(--grad)">
+            <div>
+              <h3 style="margin:0 0 4px;font-size:1.1rem">All The Code Is On GitHub</h3>
+              <p style="margin:0;color:var(--text-2);font-size:.92rem">@aw3922179-source — repositories, commits and updates.</p>
+            </div>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/aw3922179-source" target="_blank" rel="noopener">GitHub Profile ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-tight">
+      <div class="wrap" id="ctaBand"><!-- rendered by main.js --></div>
+    </section>
+
+  </main>
+
+  <div id="footHost"></div>
+  <button id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-box" id="modalContent"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
